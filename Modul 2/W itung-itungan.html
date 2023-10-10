@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penjumlahan Bilangan, Panen Pahala</title>
+</head>
+<body>
+    <h1>Penjumlahan Bilangan, salah pindah server</h1>
+    <p>Masukkan dua bilangan penjumlahan, agar diterima disisi-Nya:</p>
+    
+    <input type="text" id="bilangan1" placeholder="bilangan pertama"> +
+    <input type="text" id="bilangan2" placeholder="bilangan kedua">
+    <p>
+    <button onclick="jumlahkan()">Jumlahkan</button>
+    
+    <p>Hasil penjumlahan: <span id="hasil"></span></p>
+    
+    <script>
+        function jumlahkan() {
+            // Mendapatkan nilai dari input
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            
+            // Melakukan penjumlahan
+            var hasil = bilangan1 + bilangan2;
+            
+            // Menampilkan hasil
+            document.getElementById("hasil").textContent = hasil;
+        }
+    </script>
+</body>
+</html>
